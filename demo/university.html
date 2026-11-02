@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>University Student Portal</title><style>
+body{font-family:Arial,sans-serif;background:#f1f5fa;margin:0;color:#1b2a41}.bar{background:#173f75;color:white;padding:22px 8%;font-size:22px}.wrap{max-width:760px;margin:40px auto;background:white;padding:32px;border-radius:16px;box-shadow:0 5px 20px #19385b12}h1{margin-top:0}.intro{color:#5d6b7d;line-height:1.5}.field{display:block;margin:20px 0;font-weight:bold}.field input{display:block;width:100%;padding:13px;margin-top:8px;border:1px solid #c5d1df;border-radius:8px;font-size:16px}.action{padding:13px 20px;background:#185abc;color:white;border:0;border-radius:8px;font-size:16px;cursor:pointer}.result{margin-top:18px;padding:14px;background:#e8f5e9;border-radius:8px;display:none}.tip{background:#fff7e6;padding:12px;border-radius:8px;color:#78540b;font-size:14px}</style></head>
+<body><header class="bar">University Student Services</header><main class="wrap"><h1>Application Status</h1><p class="intro">Use this portal to check the progress of your student application. If you need help, open the Saarthi extension.</p><p class="tip">Demo page: use any application number, such as DEMO123.</p>
+<label class="field">Application number<input id="appno" placeholder="Enter your application number" aria-label="Application number"></label>
+<label class="field">Date of birth<input type="text" placeholder="DD/MM/YYYY" aria-label="Date of birth"></label>
+<button class="action" id="check">Check Status</button><div id="result" class="result" role="status">Your demo application is being processed.</div>
+<script>document.getElementById('check').onclick=()=>{document.getElementById('result').style.display='block';};</script>
+</main></body></html>

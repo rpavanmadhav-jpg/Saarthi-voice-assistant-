@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Saarthi - Voice Web Guide",
+  "version": "1.0.0",
+  "description": "A voice-guided assistant that helps users understand and navigate webpages.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}
